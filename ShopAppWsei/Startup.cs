@@ -47,6 +47,7 @@ namespace ShopAppWsei
             app.UseEndpoints(routes => routes.MapControllerRoute(
            name: "default",
            pattern: "{controller=Product}/{action=List}/{id?}"));
+           SeedData.EnsurePopulated(app);
         }
     }
 }
