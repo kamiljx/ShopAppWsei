@@ -5,14 +5,14 @@ using ShopAppWsei.Models;
 
 namespace ShopAppWsei.Models
 {
-    public class EFProductRepository : IProductRepository
+    public class EFProductRepository : IProductRepository 
     {
-        private readonly AppDbContext ctx;
+        private readonly AppDbContext _ctx;
 
         public EFProductRepository(AppDbContext ctx)
         {
-            this.ctx = ctx;
+            this._ctx = ctx;
         }
-        public IQueryable<Product> Products => ctx.Products;
+        public IQueryable<Product> Products => _ctx.Products;
     }
 }

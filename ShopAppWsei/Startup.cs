@@ -26,6 +26,7 @@ namespace ShopAppWsei
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddTransient<IProductRepository, EFProductRepository>();
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["Data:ComputerStoreProducts:ConnectionString"]));
@@ -44,10 +45,22 @@ namespace ShopAppWsei
 
             app.UseRouting();
 
-            app.UseEndpoints(routes => routes.MapControllerRoute(
-           name: "default",
-           pattern: "{controller=Product}/{action=List}/{id?}"));
-           SeedData.EnsurePopulated(app);
+            app.UseEndpoints(routes =>
+            {
+                routes.MapControllerRoute(
+             name: "default",
+             pattern: "{controller=Product}/{action=List}/{id?}");
+
+                routes.MapControllerRoute(
+                    name: null,
+                    pattern: "Product/{category}",
+                    defaults: new
+                    {
+                        controller = "Product",
+                        action = "List"
+                    }
+                    );
+            });
         }
     }
 }

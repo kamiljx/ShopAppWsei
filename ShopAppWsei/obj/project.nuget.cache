@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FxTxbWCaq6Qi8U0kUiIMY8pmkZIxM7FYbNuZsYOK8nUiobGPFK3qM4kcUbMzlM8JCFJ0BnoZLeyubK0MnhsfPg==",
+  "dgSpecHash": "o0VO0vvDlGZ+ukvf8diBth27xVEloRIzdLNwHSk50MmH5UWAysktfrVux1Gxs1uxUctq2CZhFNEepJowrB3hTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rzesz\\source\\repos\\ShopAppWsei\\ShopAppWsei\\ShopAppWsei.csproj",
+  "projectFilePath": "C:\\Users\\rzesz\\Documents\\GitHub\\ShopAppWsei\\ShopAppWsei\\ShopAppWsei.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rzesz\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\rzesz\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

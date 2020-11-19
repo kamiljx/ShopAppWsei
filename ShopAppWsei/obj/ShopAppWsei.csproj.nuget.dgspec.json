@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rzesz\\source\\repos\\ShopAppWsei\\ShopAppWsei\\ShopAppWsei.csproj": {}
+    "C:\\Users\\rzesz\\Documents\\GitHub\\ShopAppWsei\\ShopAppWsei\\ShopAppWsei.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rzesz\\source\\repos\\ShopAppWsei\\ShopAppWsei\\ShopAppWsei.csproj": {
+    "C:\\Users\\rzesz\\Documents\\GitHub\\ShopAppWsei\\ShopAppWsei\\ShopAppWsei.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rzesz\\source\\repos\\ShopAppWsei\\ShopAppWsei\\ShopAppWsei.csproj",
+        "projectUniqueName": "C:\\Users\\rzesz\\Documents\\GitHub\\ShopAppWsei\\ShopAppWsei\\ShopAppWsei.csproj",
         "projectName": "ShopAppWsei",
-        "projectPath": "C:\\Users\\rzesz\\source\\repos\\ShopAppWsei\\ShopAppWsei\\ShopAppWsei.csproj",
+        "projectPath": "C:\\Users\\rzesz\\Documents\\GitHub\\ShopAppWsei\\ShopAppWsei\\ShopAppWsei.csproj",
         "packagesPath": "C:\\Users\\rzesz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rzesz\\source\\repos\\ShopAppWsei\\ShopAppWsei\\obj\\",
+        "outputPath": "C:\\Users\\rzesz\\Documents\\GitHub\\ShopAppWsei\\ShopAppWsei\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rzesz\\AppData\\Roaming\\NuGet\\NuGet.Config",
