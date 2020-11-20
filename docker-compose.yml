@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  shopappwsei:
-    image: ${DOCKER_REGISTRY-}shopappwsei
-    build:
-      context: .
-      dockerfile: ShopAppWsei/Dockerfile
