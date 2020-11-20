@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ShopAppWsei.Models;
 
+
 namespace ShopAppWsei
 {
     public class Startup
@@ -29,7 +30,11 @@ namespace ShopAppWsei
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddTransient<IProductRepository, EFProductRepository>();
-            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["Data:ComputerStoreProducts:ConnectionString"]));
+            //services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["Data:ComputerStoreProducts:ConnectionString"]));
+            services.AddDbContext<AppDbContext>(options => options.UseNpgsql(
+                Configuration.GetConnectionString("DefaultConnection")
+                )
+             );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
