@@ -53,18 +53,26 @@ namespace ShopAppWsei
             app.UseEndpoints(routes =>
             {
                 routes.MapControllerRoute(
-             name: "default",
-             pattern: "{controller=Product}/{action=List}/{id?}");
+                     name: "default",
+                    pattern: "{controller=Product}/{action=List}/{id?}");
 
                 routes.MapControllerRoute(
-                    name: null,
-                    pattern: "Product/{category}",
-                    defaults: new
-                    {
-                        controller = "Product",
-                        action = "List"
-                    }
-                    );
+                        name: "Sorted product",
+                        pattern: "Product/{category}",
+                        defaults: new
+                        {
+                            controller = "Product",
+                            action = "List"
+                        });
+                routes.MapControllerRoute(
+                     name: "Admin panel",
+                    pattern: "{controller=Admin}/{action=Index}");
+                routes.MapControllerRoute(
+                     name: "Admin panel edit",
+                    pattern: "{controller=Admin}/{action=Edit}/{id?}");
+                routes.MapControllerRoute(
+                     name: "Admin panel Delete",
+                    pattern: "{controller=Admin}/{action=Delete}/{id?}");
             });
         SeedData.EnsurePopulated(app);
         }
