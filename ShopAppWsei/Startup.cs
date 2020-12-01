@@ -66,6 +66,7 @@ namespace ShopAppWsei
                     }
                     );
             });
+        SeedData.EnsurePopulated(app);
         }
     }
 }

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,5 +19,24 @@
     </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\lib\twitter-bootstrap\js\bootstrap.min.js" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\js\bootstrap.min.js.map" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_alert.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_badge.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_breadcrumb.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_buttons.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_button-group.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_card.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_carousel.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_close.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_custom-forms.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_code.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_dropdown.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_forms.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_functions.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_grid.scss" />
+    <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_images.scss" />
   </ItemGroup>
 </Project>

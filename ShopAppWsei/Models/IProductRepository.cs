@@ -9,5 +9,7 @@ namespace ShopAppWsei.Models
         {
             get;
         }
+
+        void SaveProduct(Product product);
     }
 }

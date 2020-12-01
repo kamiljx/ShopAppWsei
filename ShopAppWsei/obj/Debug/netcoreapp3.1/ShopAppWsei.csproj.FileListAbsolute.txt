@@ -253,8 +253,6 @@ C:/Users/rzesz/Documents/GitHub/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/obj/Debug/netcoreapp3.1/ShopAppWsei.pdb
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/appsettings.json
-/Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/lib/jquery/bower.json
-/Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/lib/jquery/package.json
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/libman.json
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/ShopAppWsei.deps.json
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/ShopAppWsei.runtimeconfig.json
