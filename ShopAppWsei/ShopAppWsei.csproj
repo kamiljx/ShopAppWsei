@@ -10,6 +10,7 @@
     <Folder Include="Controllers\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="Components\" />
+    <Folder Include="Middlewares\" />
   </ItemGroup>
 
   <ItemGroup>

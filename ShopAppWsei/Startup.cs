@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ShopAppWsei.Middlewares;
 using ShopAppWsei.Models;
 
 
@@ -35,6 +36,7 @@ namespace ShopAppWsei
                 Configuration.GetConnectionString("DefaultConnection")
                 )
              );
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +49,7 @@ namespace ShopAppWsei
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseMiddleware<ElapsedTimeMiddleware>();
 
 
 
