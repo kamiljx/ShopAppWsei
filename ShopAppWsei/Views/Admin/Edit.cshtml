@@ -25,7 +25,12 @@
         <div>
             <span asp-validation-for="Category" class="text-danger"></span>
         </div>
-        <input asp-for="Category" class="form-control"/>
+         <input asp-for="Category" class="form-control"/>
+        @* <option>Dyski</option>
+        <option>Gaming</option>
+        <select asp-for="Category">
+        </select>*@
+
     </div>
     <div class="form-control">
         <label asp-for="Price">Price</label>

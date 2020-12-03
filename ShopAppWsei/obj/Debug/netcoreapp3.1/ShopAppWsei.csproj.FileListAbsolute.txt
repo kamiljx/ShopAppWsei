@@ -298,6 +298,6 @@ C:/Users/rzesz/Documents/GitHub/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.Design.dll
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/Humanizer.dll
-/Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Edit.cshtml.g.cs
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Index.cshtml.g.cs
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_AdminLayout.cshtml.g.cs
+/Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Edit.cshtml.g.cs

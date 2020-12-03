@@ -41,5 +41,20 @@ namespace ShopAppWsei.Controllers
             }
 
         }
+        public ViewResult Create() =>
+            View("Edit", new Product());
+
+        [HttpPost]
+
+        public IActionResult Delete(int ID)
+        {
+            Product deleteProduct = repository.DeleteProduct(ID);
+            if( deleteProduct != null)
+            {
+                TempData["message"] = $"Usunuęto {deleteProduct.Name}";
+            }
+            return RedirectToAction("Index");
+        }
+
     }
 }

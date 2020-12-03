@@ -1,12 +1,40 @@
-﻿@model IQueryable<Product> 
-
-@foreach (var p in Model)
-{
-    <div>
-        <h3>@p.Name</h3>
-        <p>ID: @p.ID</p>
-        <p>Category @p.Category</p>
-        <p>Description @p.Description</p>
-        <p>Price USD @p.Price.ToString("c")</p>
-    </div>
+﻿@model IQueryable<Product>
+@{
+    ViewData["Title"] = "List";
+    Layout = "_Layout";
 }
+
+<div class="table-responsive">
+    <table id="tablePreview" class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nazwa</th>
+                <th>Kategoria</th>
+                <th>Opis</th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+        @foreach (var p in Model)
+        {
+
+            @*<div>
+                    <h3>@p.Name</h3>
+                    <p>ID: @p.ID</p>
+                    <p>Category @p.Category</p>
+                    <p>Description @p.Description</p>
+                    <p>Price USD @p.Price.ToString("c")</p>
+                </div>
+            *@
+            <tbody>
+                <tr>
+                    <th>@p.ID</th>
+                    <th>@p.Name</th>
+                    <th>@p.Category</th>
+                    <th>@p.Description</th>
+                    <th>@p.Price</th>
+                </tr>
+            </tbody>
+        }
+    </table>
+</div>

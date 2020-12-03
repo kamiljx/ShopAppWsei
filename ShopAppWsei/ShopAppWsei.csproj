@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Views\Admin\" />
+    <Folder Include="Components\" />
   </ItemGroup>
 
   <ItemGroup>

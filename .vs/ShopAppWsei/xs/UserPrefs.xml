@@ -1,37 +1,26 @@
 ﻿<Properties StartupConfiguration="{18553185-A9C3-4A92-A3F3-D6CBBC982953}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShopAppWsei/Views/Shared/_AdminLayout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShopAppWsei/Startup.cs">
     <Files>
-      <File FileName="ShopAppWsei/Views/_ViewImports.cshtml" Line="1" Column="1" IsPinned="True" />
-      <File FileName="ShopAppWsei/appsettings.json" IsPinned="True" />
-      <File FileName="ShopAppWsei/Views/Shared/_Layout.cshtml" Line="23" Column="12" />
-      <File FileName="ShopAppWsei/Views/Shared/Components/NavigationMenu/Default.cshtml" Line="3" Column="1" />
-      <File FileName="ShopAppWsei/Models/EFProductRepository.cs" Line="44" Column="29" />
+      <File FileName="ShopAppWsei/Views/Shared/Components/NavigationMenu/Default.cshtml" Line="9" Column="39" />
+      <File FileName="ShopAppWsei/Views/Product/List.cshtml" Line="3" Column="30" />
+      <File FileName="ShopAppWsei/Startup.cs" Line="51" Column="1" />
+      <File FileName="ShopAppWsei/Views/Shared/_AdminLayout.cshtml" Line="27" Column="11" />
+      <File FileName="ShopAppWsei/Views/Shared/_Layout.cshtml" Line="1" Column="16" />
+      <File FileName="ShopAppWsei/Views/Admin/Index.cshtml" Line="1" Column="1" />
       <File FileName="ShopAppWsei/Models/SeedData.cs" Line="17" Column="1" />
-      <File FileName="ShopAppWsei/Controllers/AdminController.cs" Line="28" Column="1" />
-      <File FileName="ShopAppWsei/Program.cs" Line="16" Column="1" />
-      <File FileName="ShopAppWsei/Views/Admin/Index.cshtml" Line="32" Column="7" />
-      <File FileName="ShopAppWsei/Views/Admin/Edit.cshtml" Line="39" Column="42" />
-      <File FileName="ShopAppWsei/Models/Product.cs" Line="5" Column="18" />
-      <File FileName="ShopAppWsei/Models/IProductRepository.cs" Line="1" Column="1" />
-      <File FileName="ShopAppWsei/Startup.cs" Line="75" Column="64" />
-      <File FileName="ShopAppWsei/Views/Shared/_AdminLayout.cshtml" Line="19" Column="11" />
+      <File FileName="ShopAppWsei/Components/HomeController.cs" Line="25" Column="2" />
+      <File FileName="ShopAppWsei/Program.cs" Line="16" Column="51" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ShopAppWsei" expanded="True">
             <Node name="ShopAppWsei" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Admin" expanded="True" />
-                <Node name="Product" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="_AdminLayout.cshtml" selected="True" />
-                </Node>
-              </Node>
+              <Node name="Views" expanded="True" />
               <Node name="wwwroot" expanded="True">
-                <Node name="lib" expanded="True" />
+                <Node name="lib" expanded="True">
+                  <Node name="twitter-bootstrap" expanded="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

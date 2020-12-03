@@ -48,6 +48,8 @@ namespace ShopAppWsei
                 app.UseDeveloperExceptionPage();
             }
 
+
+
             app.UseRouting();
 
             app.UseEndpoints(routes =>
@@ -64,12 +66,19 @@ namespace ShopAppWsei
                             controller = "Product",
                             action = "List"
                         });
+
+                routes.MapControllerRoute(
+                     name: "defaultAdmin",
+                    pattern: "{controller=Admin}/{action=Index}");
+
                 routes.MapControllerRoute(
                      name: "Admin panel",
                     pattern: "{controller=Admin}/{action=Index}");
+
                 routes.MapControllerRoute(
                      name: "Admin panel edit",
                     pattern: "{controller=Admin}/{action=Edit}/{id?}");
+
                 routes.MapControllerRoute(
                      name: "Admin panel Delete",
                     pattern: "{controller=Admin}/{action=Delete}/{id?}");

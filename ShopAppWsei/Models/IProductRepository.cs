@@ -11,5 +11,6 @@ namespace ShopAppWsei.Models
         }
 
         void SaveProduct(Product product);
+        Product DeleteProduct(int iD);
     }
 }
