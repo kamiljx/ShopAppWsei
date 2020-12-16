@@ -14,7 +14,7 @@
         "outputPath": "/Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/kamilrzeszutek/.config/NuGet/NuGet.Config"
+          "/Users/kamilrzeszutek/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -38,19 +38,23 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.1, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.1, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
               "target": "Package",
@@ -75,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }
