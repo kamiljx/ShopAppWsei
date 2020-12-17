@@ -47,6 +47,7 @@ namespace ShopAppWsei
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseAuthentication();
             app.UseDeveloperExceptionPage(); // informacje szczegółowe o błędach
             app.UseStatusCodePages(); // Wyświetla strony ze statusem błędu
             app.UseStaticFiles(); // obsługa treści statycznych css, images, js
@@ -54,11 +55,12 @@ namespace ShopAppWsei
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseMiddleware<ElapsedTimeMiddleware>();
+            //app.UseMiddleware<ElapsedTimeMiddleware>();
 
 
 
             app.UseRouting();
+            app.UseAuthorization();
 
             app.UseEndpoints(routes =>
             {

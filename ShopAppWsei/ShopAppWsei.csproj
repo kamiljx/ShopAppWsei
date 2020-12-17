@@ -8,9 +8,11 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Views\Admin\" />
     <Folder Include="Components\" />
     <Folder Include="Middlewares\" />
+    <Folder Include="Views\" />
+    <Folder Include="Models\ViewModels\" />
+    <Folder Include="wwwroot\css\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +24,8 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.1" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Microsoft.IdentityModel.Logging" Version="6.8.0" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\lib\twitter-bootstrap\js\bootstrap.min.js" />
@@ -41,5 +45,9 @@
     <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_functions.scss" />
     <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_grid.scss" />
     <Content Remove="wwwroot\lib\twitter-bootstrap\scss\_images.scss" />
+    <Content Remove="wwwroot\css\register.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\css\register.css" />
   </ItemGroup>
 </Project>
