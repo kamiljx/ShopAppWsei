@@ -1,24 +1,11 @@
 ﻿<Properties StartupConfiguration="{18553185-A9C3-4A92-A3F3-D6CBBC982953}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShopAppWsei/Migrations/20201216203426_UserIdentity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShopAppWsei/Models/Product.cs">
     <Files>
-      <File FileName="ShopAppWsei/ViewModels/LoginViewModel.cs" Line="11" Column="18" IsPinned="True" />
-      <File FileName="ShopAppWsei/Views/Shared/Components/NavigationMenu/Default.cshtml" Line="9" Column="39" />
-      <File FileName="ShopAppWsei/Views/Product/List.cshtml" />
-      <File FileName="ShopAppWsei/Startup.cs" Line="35" Column="76" />
-      <File FileName="ShopAppWsei/Views/Shared/_AdminLayout.cshtml" Line="12" Column="38" />
-      <File FileName="ShopAppWsei/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
-      <File FileName="ShopAppWsei/Views/Admin/Index.cshtml" Line="1" Column="1" />
-      <File FileName="ShopAppWsei/Models/SeedData.cs" Line="3" Column="48" />
-      <File FileName="ShopAppWsei/Program.cs" />
-      <File FileName="ShopAppWsei/Models/AppDbContext.cs" Line="6" Column="1" />
-      <File FileName="ShopAppWsei/Middlewares/ElapsedTimeMiddleware.cs" />
-      <File FileName="ShopAppWsei/Controllers/AccountController.cs" Line="11" Column="34" />
-      <File FileName="ShopAppWsei/Controllers/ProductController.cs" Line="1" Column="1" />
+      <File FileName="ShopAppWsei/Models/IProductRepository.cs" Line="11" Column="30" IsPinned="True" />
+      <File FileName="ShopAppWsei/Models/EFProductRepository.cs" Line="19" Column="46" />
+      <File FileName="ShopAppWsei/Controllers/ApiProductController.cs" Line="46" Column="1" />
       <File FileName="ShopAppWsei/Controllers/AdminController.cs" Line="1" Column="1" />
-      <File FileName="ShopAppWsei/Models/IdentitySeedData.cs" Line="12" Column="47" />
-      <File FileName="ShopAppWsei/Views/Account/Login.cshtml" Line="30" Column="41" />
-      <File FileName="ShopAppWsei/Views/Account/Styles/style.css" Line="93" Column="15" />
-      <File FileName="ShopAppWsei/Migrations/20201216203426_UserIdentity.cs" Line="1" Column="1" />
+      <File FileName="ShopAppWsei/Models/Product.cs" Line="5" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,20 +13,8 @@
           <Node name="ShopAppWsei" expanded="True">
             <Node name="ShopAppWsei" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Migrations" expanded="True">
-                <Node name="20201216203426_UserIdentity.cs" selected="True" />
-              </Node>
               <Node name="Models" expanded="True">
-                <Node name="ViewModels" expanded="True" />
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Account" expanded="True" />
-                <Node name="Admin" expanded="True" />
-                <Node name="Product" expanded="True" />
-                <Node name="Shared" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
+                <Node name="Product.cs" selected="True" />
               </Node>
             </Node>
           </Node>

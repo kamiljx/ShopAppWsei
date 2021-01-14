@@ -43,7 +43,7 @@ namespace ShopAppWsei.Controllers
             }
 
         }
-        public ViewResult Create() =>
+        public ViewResult Create(Product product) =>
             View("Edit", new Product());
 
         [HttpPost]

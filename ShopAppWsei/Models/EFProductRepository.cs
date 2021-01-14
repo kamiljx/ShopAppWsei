@@ -14,6 +14,8 @@ namespace ShopAppWsei.Models
             this._ctx = ctx;
         }
         public IQueryable<Product> Products => _ctx.Products;
+
+
         public void SaveProduct (Product product)
         {
             if (product.ID == 0)
@@ -33,6 +35,13 @@ namespace ShopAppWsei.Models
             }
             _ctx.SaveChanges();
         }
+        public Product AddProduct(Product product)
+        {
+            _ctx.Products.Add(product);
+            _ctx.SaveChanges();
+
+            return product;
+        }
         public Product DeleteProduct (int ID)
         {
             Product dbEntry = _ctx.Products.FirstOrDefault(p => p.ID == ID);
@@ -45,5 +54,28 @@ namespace ShopAppWsei.Models
 
         }
 
+        public void CreateProduct(Product product)
+        {
+            _ctx.Products.Add(new Product());
+            _ctx.SaveChanges();
+        }
+
+        public bool EditProduct(Product product)
+        {
+            Product dbEntry = _ctx.Products.FirstOrDefault(p => p.ID == product.ID);
+
+            if (dbEntry != null)
+            {
+                dbEntry.Name = product.Name;
+                dbEntry.Description = product.Description;
+                dbEntry.Price = product.Price;
+                dbEntry.Category = product.Category;
+            }else
+            {
+                return false;
+            }
+            _ctx.SaveChanges();
+            return true;
+        }
     }  
 }

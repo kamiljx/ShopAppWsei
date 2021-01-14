@@ -381,3 +381,8 @@ C:/Users/rzesz/Documents/GitHub/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
 /Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
+/Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
+/Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
+/Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/kamilrzeszutek/Repos/ShopAppWsei/ShopAppWsei/obj/Debug/netcoreapp3.1/ShopAppWsei.MvcApplicationPartsAssemblyInfo.cs

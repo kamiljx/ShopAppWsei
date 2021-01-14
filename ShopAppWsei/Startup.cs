@@ -32,6 +32,8 @@ namespace ShopAppWsei
         {
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddSwaggerGen();
+            services.AddControllers();
             services.AddTransient<IProductRepository, EFProductRepository>();
             //services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["Data:ComputerStoreProducts:ConnectionString"]));
             services.AddDbContext<AppDbContext>(options => options.UseNpgsql(
@@ -47,6 +49,7 @@ namespace ShopAppWsei
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSwagger();
             app.UseAuthentication();
             app.UseDeveloperExceptionPage(); // informacje szczegółowe o błędach
             app.UseStatusCodePages(); // Wyświetla strony ze statusem błędu
@@ -57,7 +60,11 @@ namespace ShopAppWsei
             }
             //app.UseMiddleware<ElapsedTimeMiddleware>();
 
-
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = "api";
+            });
 
             app.UseRouting();
             app.UseAuthorization();
