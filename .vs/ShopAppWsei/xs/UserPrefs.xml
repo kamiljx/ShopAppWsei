@@ -1,11 +1,10 @@
-﻿<Properties StartupConfiguration="{18553185-A9C3-4A92-A3F3-D6CBBC982953}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShopAppWsei/Models/Product.cs">
+﻿<Properties StartupConfiguration="{D0269B9F-5C24-489B-AA8F-A50434A40C0B}|Default">
+  <MonoDevelop.Ide.ItemProperties.ShopAppWsei.tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShopAppWsei.tests/ProductModelTests.cs">
     <Files>
-      <File FileName="ShopAppWsei/Models/IProductRepository.cs" Line="11" Column="30" IsPinned="True" />
-      <File FileName="ShopAppWsei/Models/EFProductRepository.cs" Line="19" Column="46" />
-      <File FileName="ShopAppWsei/Controllers/ApiProductController.cs" Line="46" Column="1" />
-      <File FileName="ShopAppWsei/Controllers/AdminController.cs" Line="1" Column="1" />
-      <File FileName="ShopAppWsei/Models/Product.cs" Line="5" Column="18" />
+      <File FileName="ShopAppWsei.tests/ProductControllerTests.cs" Line="32" Column="21" />
+      <File FileName="ShopAppWsei/Controllers/ProductController.cs" Line="30" Column="10" />
+      <File FileName="ShopAppWsei.tests/ProductModelTests.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,8 +12,23 @@
           <Node name="ShopAppWsei" expanded="True">
             <Node name="ShopAppWsei" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Product.cs" selected="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="ShopAppWsei.tests" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="ProductModelTests.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="ShopAppWsei" expanded="True">
+            <Node name="ShopAppWsei.tests" expanded="True">
+              <Node name="ShopAppWsei.tests" expanded="True">
+                <Node name="ProductControllerTests" expanded="True">
+                  <Node name="CanGetAllProducts" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

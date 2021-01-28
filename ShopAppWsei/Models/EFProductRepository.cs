@@ -15,6 +15,7 @@ namespace ShopAppWsei.Models
         }
         public IQueryable<Product> Products => _ctx.Products;
 
+       
 
         public void SaveProduct (Product product)
         {

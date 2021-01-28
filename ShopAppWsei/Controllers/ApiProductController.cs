@@ -26,13 +26,31 @@ namespace ShopAppWsei.Controllers
 
 
 
+        /// <summary>
+        /// Pobranie produktu o określonym ID
+        /// <param name="ID"></param>
+        /// </summary>
 
-        [HttpGet("id")]
-        public Product Get(int ID) => repository.Products.FirstOrDefault(p => p.ID == p.ID);
+        [HttpGet("{ID}")]
 
+        public ActionResult<Product>Get(int ID)
+        {
+            var product = repository.Products.FirstOrDefault(p => p.ID == p.ID);
+            if (product == null)
+                return NotFound();
+            return Ok(product);
+        }
+        /// <summary>
+        /// Pobranie wszystkich produktów
+        /// </summary>
         [HttpGet]
         public IEnumerable<Product> Get() => repository.Products;
 
+
+        /// <summary>
+        /// Dodanie produktu
+        /// </summary>
+        /// 
         [HttpPost]
         public Product Post([FromBody] Product product) =>
             repository.AddProduct(new Product
@@ -44,19 +62,41 @@ namespace ShopAppWsei.Controllers
             });
 
 
+        /// <summary>
+        /// Edytowanie produktu o wskazanym ID  
+        /// </summary>
+
+
         [HttpPut]
         public bool Put([FromBody] Product product) =>
             repository.EditProduct(product);
 
+
+
+
+
+        /// <summary>
+        /// Usunięcie produktu o wskazanym ID  
+        /// </summary>
+        /// <param name="ID"></param>
         [HttpDelete("{ID}")]
-        public void Delete(int ID ) => repository.DeleteProduct(ID);
-        
-        //[HttpGet]
-        //public ActionResult GetProduct()
-        //{
-        //    var ProductList = repository.Products.Where(product = Product);
-        //    return Ok(ProductList);
-        //}
+
+        public ActionResult<Product> Delete(int ID)
+        {
+            var product = repository.DeleteProduct(ID);
+            if (product == null)
+                return NotFound();
+            return Ok(product);
+        }
+
+
+
+            //[HttpGet]
+            //public ActionResult GetProduct()
+            //{
+            //    var ProductList = repository.Products.Where(product = Product);
+            //    return Ok(ProductList);
+            //}
 
 
 
@@ -65,8 +105,8 @@ namespace ShopAppWsei.Controllers
 
 
 
-        //public IEnumerable<Product> GetProducts() => repository.
+            //public IEnumerable<Product> GetProducts() => repository.
 
-    }
+        }
 
 }

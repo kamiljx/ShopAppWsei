@@ -19,6 +19,15 @@ namespace ShopAppWsei.Controllers
         {
             return View();
         }
+        public Product GetProductById(int productId)
+        {
+            Product product = productRepository.Products.Where(x => x.ID == productId).FirstOrDefault();
+            return product;
+        }
+        public ViewResult GetProductListAll()
+        {
+            return View(productRepository.Products);
+        }
     }
 
 
