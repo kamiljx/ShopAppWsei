@@ -13,6 +13,11 @@
     <Folder Include="Views\" />
     <Folder Include="Models\ViewModels\" />
     <Folder Include="wwwroot\css\" />
+    <Folder Include="SignalRChat\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="SignalRChat\Hubs\" />
+    <Folder Include="wwwroot\lib\%40microsoft\signalr\dist\browser\" />
   </ItemGroup>
 
   <ItemGroup>

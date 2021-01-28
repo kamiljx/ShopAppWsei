@@ -12,7 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ShopAppWsei.Middlewares;
 using ShopAppWsei.Models;
-
+using ShopAppWsei.SignalRChat.Hubs;
 
 
 namespace ShopAppWsei
@@ -32,6 +32,7 @@ namespace ShopAppWsei
         {
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddSignalR();
             services.AddSwaggerGen();
             services.AddControllers();
             services.AddTransient<IProductRepository, EFProductRepository>();
@@ -68,7 +69,7 @@ namespace ShopAppWsei
 
             app.UseRouting();
             app.UseAuthorization();
-
+            
             app.UseEndpoints(routes =>
             {
                 routes.MapControllerRoute(
@@ -99,8 +100,15 @@ namespace ShopAppWsei
                 routes.MapControllerRoute(
                      name: "Admin panel Delete",
                     pattern: "{controller=Admin}/{action=Delete}/{id?}");
+
             });
-        SeedData.EnsurePopulated(app);
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapRazorPages();
+                endpoints.MapHub<ChatHub>("/chathub");
+            });
+
+            SeedData.EnsurePopulated(app);
         }
     }
 }
